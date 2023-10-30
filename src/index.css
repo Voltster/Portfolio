@@ -1,0 +1,110 @@
+/* Font */
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+
+body {
+  margin: 0;
+  font-family:'Roboto' 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body::-webkit-scrollbar, html::-webkit-scrollbar{
+  display: none;
+  /* scroll-snap-type:y mandatory */
+}
+
+/* section::-webkit-scrollbar{
+  scroll-snap-align:start 
+} */
+
+@tailwind base;
+
+
+/* Firefox */
+*{
+  scrollbar-width: thin;
+  scrollbar-color: #FFD60A;
+  scroll-behavior: smooth;
+  
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 5px;
+  display: none;
+}
+
+*::-webkit-scrollbar-track {
+  background: black;
+  border-radius:  20px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #FFD60A ;
+  border-radius: 50%;
+  border: 2px solid #FFD60A;
+  
+}
+
+html,
+body {
+  font-size: 100%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body{
+  /* background-size: 10% ; */
+  background: linear-gradient(to right top, #031126c0, #004d7a86, #00879300, #00bf7300, #a6eb1219) , 
+  /* background: linear-gradient(to right top, #0311261e, #004d7a1a, #00879300, #00bf7300, #a6eb1219) ,  */
+  url('./assets//Bg/bg.jpg') ;
+  background-size: cover;
+}
+.grid-Bg{
+  background-image: linear-gradient(rgba(5, 5, 5, 0.4) 0.5px, transparent 0.5px), linear-gradient(to right, rgba(5, 5, 5, 0.4) 0.5px, transparent 0.5px);
+  background-size: 89px 89px;
+  background-color: rgba(71, 212, 255, 0);
+}
+
+@tailwind components;
+@tailwind utilities;
+
+/* Media query for larger screens */
+/* @media screen and (min-width: 1366px) {
+  html,
+  body {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 1080px) {
+  html,
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+} */
+
+
+/* ---Text-style--- */
+@layer components {
+  .heading{
+    @apply text-4xl font-bold tracking-tight text-gray-300 sm:text-6xl
+    }
+	
+  .subHeading{
+      @apply text-3xl font-bold tracking-tight text-gray-300
+    }
+  .paragraph{
+    @apply  leading-normal text-gray-300  text-base 
+    }
+  }
+
+
+
+.position{
+  background-position-x: right;
+  margin-left: 25%;
+}
