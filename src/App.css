@@ -8,7 +8,6 @@
 	border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
-
 /* ---Mouse-Scroll--- */
 .mouse {
 	width: 40px;
@@ -57,11 +56,4 @@
 	-webkit-text-stroke-width: calc(1em/ 24) ;
 }
 
-/* #canvas{
-	position: absolute;
-	left: 0;
-	width: 100%;
-	height: 400px;
-	background: transparent;
-	z-index: 40;
-} */
+

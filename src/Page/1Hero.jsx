@@ -1,4 +1,4 @@
-import bg from "../assets/bg.svg"
+import bg from "../assets/bg1.svg"
 import Btn from '../component/Btn'
 import { AiOutlineArrowRight } from 'react-icons/ai'
 import * as Icon1 from "react-icons/ai"
@@ -6,49 +6,54 @@ import * as Icon2 from "react-icons/bs"
 import * as Icon3 from "react-icons/io5"
 import { Typewriter } from 'react-simple-typewriter'
 import {  motion as m } from "framer-motion";
-import MouseScroll from '../component/MouseScroll';
+
 
 const contactDetails = [
-    {
-      icon: "AiOutlineMail",
-      heading: "Email",
-      description: "rohitkumarmishra@gmail.com",
-    },
-    {
-      icon: "BsTelephone",
-      heading: "Phone",
-      description: "+91 954-024-3331",
-    },
-    {
-      icon: "IoLocationOutline",
-      heading: "Location",
-      description: "West Delhi, India",
-    },
-  ]
-  
+  {
+    icon: "AiOutlineMail",
+    heading: "Email",
+    description: "rohitkumarmishra@gmail.com",
+  },
+  {
+    icon: "BsTelephone",
+    heading: "Phone",
+    description: "+91 954-024-3331",
+  },
+  {
+    icon: "IoLocationOutline",
+    heading: "Location",
+    description: "West Delhi, India",
+  },
+]
 
 const Hero = () => {
 
-    const moveVariants = {
-        animation:{
-          y: [0, -15],
-          transition:{
-            yo:Infinity,
-            duration:2,
-            delay:1
-          }
-        }
+  const moveVariants = {
+    animation:{
+      y: [0, -15],
+      transition:{
+        yo:Infinity,
+        duration:2,
+        delay:1
       }
-
+    }
+  }
+  
   return (
+        
     <m.section 
     initial={{y:-15, opacity:0}}
     animate={{y:0, opacity:1}}
     transition={{duration:2, delay: 0.5}}
-    className='relative   w-full h-auto bg-fixed mt-20' id='#home'>
-        <div className=' relative w-10/12 h-[75vh] mx-auto flex  '>
-        <div className='mt-20 z-20'>
-        <p className='paragraph text-xl '>Hi There!</p>
+    className='relative  w-full h-[100vh] bg-fixed' id='#home'>
+      <div className='absolute top-20 w-full h-[90vh] flex justify-center'>
+      <img src={bg} className='absolute h-[90vh] w-screen mt-0 top-0 left-0 position'/>
+        <m.div
+        animate="visible"
+        initial="hidden"
+          exit="hidden"
+         className='absolute border-0 left-[9%] top-[10%]'>
+            <p className='paragraph text-xl '>Hi There!</p>
             
             <h1 className='heading text-white'>I am
               <span className='text-red-600'>
@@ -63,26 +68,22 @@ const Hero = () => {
                   />                      
               </span>
             </h1>
-            <p className='paragraph text-xl py-4 text-white'>I design and code beautifully simple things, <br/> and I love what I do.</p>
-            <Btn  
+            <p className='paragraph text-xl py-4 font-semibold text-white'>I design and code beautifully simple things, <br/> and I love what I do.</p>
+          
+        </m.div>
+        <Btn  
         variants={moveVariants}
         animate="animation"
         text={"Projects"} 
-        customClasses={"absolute left-[0%] mt-10"}
+        customClasses={"absolute left-[9%] top-[50%]"}
         link={`#projects`}
         >
           <AiOutlineArrowRight/>
           </Btn>
-        </div>
-        {/* Image */}
-        <div>
-        <img src={bg} className='absolute h-[90vh] w-screen mt-0 top-0 left-0 z-0 position'/>
-        
-        </div>
-        </div>
+          
           {/* Contact -- */}
-          <div
-         className='flex flex-row w-10/12 mx-auto'>
+        <div
+         className='absolute left-[9%] bottom-[10%] flex flex-row '>
           {
             contactDetails.map((ele, i)=> {
               let Icon = Icon1[ele.icon] || Icon2[ele.icon] || Icon3[ele.icon]
@@ -103,10 +104,9 @@ const Hero = () => {
             })
           }
         </div>
-                {/* Mouse Scroll */}
-        <div className="absolute hidden -bottom-4 w-full md:flex justify-center items-center ">
-          <MouseScroll />
-        </div>
+      </div>
+      
+        
     </m.section>
   )
 }

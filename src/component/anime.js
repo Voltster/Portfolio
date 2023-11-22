@@ -55,16 +55,16 @@ export const icon = {
 
 export const card ={
     initial:{
-        x:0, 
+        x:[0,0], 
         opacity:0
     },
     whileInView: (i)=>(
         {   
-            y:[150,0],     
-            opacity:1,
-            transition:{duration:0.8, ease: [0.45, 0, 0.55, 1], delay: 0.05*i}
+            x:[-150,0],     
+            transition:{duration:0.4, ease: [0.45, 0, 1, 1], delay: 0.05*i },
+            opacity:1
             
         }
-    )
-
+    ),
+    
 }

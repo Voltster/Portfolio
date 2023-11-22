@@ -56,11 +56,10 @@ body {
 }
 
 body{
-  /* background-size: 10% ; */
   background: linear-gradient(to right top, #031126c0, #004d7a86, #00879300, #00bf7300, #a6eb1219) , 
-  /* background: linear-gradient(to right top, #0311261e, #004d7a1a, #00879300, #00bf7300, #a6eb1219) ,  */
   url('./assets//Bg/bg.jpg') ;
   background-size: cover;
+  
 }
 .grid-Bg{
   background-image: linear-gradient(rgba(5, 5, 5, 0.4) 0.5px, transparent 0.5px), linear-gradient(to right, rgba(5, 5, 5, 0.4) 0.5px, transparent 0.5px);
