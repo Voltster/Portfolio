@@ -3,6 +3,7 @@ import Btn from '../component/Btn';
 import about from "../assets/Image/about.jpg";
 import resumePdf from "../assets/Resume.pdf";
 import { motion as m } from "framer-motion";
+import SectionName from '../component/SectionName';
 
 const About = () => {
   const downloadResume = () => {
@@ -13,14 +14,7 @@ const About = () => {
   return (
     <section className='w-full bg-inherit z-0 snap-start' id='about'>
       <div className='relative mx-auto flex w-11/12 h-[100%] max-w-maxContent flex-col items-center justify-center gap-8 mt-10'>
-        <m.div 
-        initial={{opacity:0}}
-        whileInView={{y:[-50,0], opacity:1}}
-        transition={{duration:1, ease: [0.45, 0, 0.55, 1]}}
-        className='flex flex-col justify-center items-center gap-x-3 mt-12'>
-          <h3 className='subHeading text-4xl text-center'>About</h3>
-          <div className='bg-gradient-to-r from-gray-900 via-gray-100 to-gray-900 w-[6rem] h-[1px] mt-1'></div>
-        </m.div>
+        <SectionName name={"About"}/>
         <div className="flex w-full flex-col md:flex-row gap-x-20 gap-y-4 items-center justify-center">
           <m.div
           initial={{x:0, opacity:0}}

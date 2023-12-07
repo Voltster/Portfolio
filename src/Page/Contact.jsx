@@ -5,7 +5,8 @@ import { motion as m } from "framer-motion"
 
 const Contact = () => {
 
-    const [state, handleSubmit] = useForm("xleyokpw");
+    const [state] = useForm("xleyokpw");
+    // const [state, handleSubmit] = useForm("xleyokpw");
     // if (state.succeeded) {
     //     return
     // }
@@ -19,7 +20,7 @@ const Contact = () => {
                 <h3 className='subHeading text-4xl text-center'>Contact</h3>
                 <div className='bg-gradient-to-r from-[#29144b66] via-gray-100 to-[#29144b6e] w-[7rem] h-[1px] mt-2'></div>
             </m.div>
-            <div className="relative flex  items-top justify-center sm:items-center sm:pt-0 mt-12 rounded-lg py-8 glassmorphism">
+            <div className="relative flex  items-top justify-center sm:items-center sm:pt-0 mt-12 rounded-lg py-8 bg-black contact">
                 <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
                     <div className="mt-8 overflow-hidden ">
                         <div className="grid grid-cols-1 md:grid-cols-2">

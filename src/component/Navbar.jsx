@@ -2,7 +2,7 @@ import  { useState } from 'react'
 import Btn from './Btn'
 import { AiOutlineArrowRight } from 'react-icons/ai'
 import { Squash as Hamburger } from 'hamburger-react'
-// import rohit from "../assets/Logo/rohit.png"
+import rohit from "../assets/Logo/layers.png"
 import { AnimatePresence, motion as m } from "framer-motion"
 import { menuSlide, slide } from './anime'
 
@@ -24,10 +24,12 @@ const Navbar = () => {
     initial={{y:-25}}
     animate={{y:0}}
     transition={{duration:0.5}}
-    className='w-full px-6 z-50 fixed inset-x-0 top-0 flex justify-center items-center navbar'>
-        <div className=' relative w-full md:w-[880px] p-4  rounded-md flex md:justify-around items-center '>
-             {/* <img src={rohit} alt="rohit" width={70} className='cursor-pointer' /> */}
+    className='w-full px-6 z-50 fixed bg-inherit inset-x-0 top-0 flex justify-center items-center navbar'>
+        <div className='relative w-full md:w-[880px] p-4  rounded-md flex md:justify-around items-center '>
+            <div className='flex justify-center items-center gap-2'>
+            <img src={rohit} alt="rohit" width={40} className='cursor-pointer' />
             <p className='text-lg text-gray-200 font-medium'>Rohit Kumar Mishra</p>
+            </div>
             {/* Medium screen */}
             <div className='hidden md:flex  md:gap-x-6 items-center ml-6 flex-2'>
                 {/* Navlinks */}
@@ -59,7 +61,7 @@ const Navbar = () => {
             {
                 isActive && (
                     <m.div variants={menuSlide} animate="enter" exit="exit" initial="initial" 
-                    className='md:hidden p-4 w-[80%] bg-gray-900 grid-Bg rounded-lg fixed top-[4.7rem] -right-24 sm:-right-40 h-screen  flex flex-col items-center  gap-12 pt-16'>
+                    className='md:hidden p-4 w-[80%] bg-gray-900  rounded-lg fixed top-[4.7rem] -right-24 sm:-right-40 h-screen  flex flex-col items-center  gap-12 pt-16'>
                     {
                         navigation.map((navLink, index) =>(
                             <m.a variants={slide} animate="enter" exit="exit" initial="initial"  custom={index}

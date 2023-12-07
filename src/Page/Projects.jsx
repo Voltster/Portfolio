@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Card from '../component/Card'
 import projectData from "../utils/data"
 import ProjectModal from '../component/ProjectModal'
-import { motion as m } from 'framer-motion'
+import SectionName from '../component/SectionName';
 
 
 const Projects = () => {
@@ -40,14 +40,7 @@ const Projects = () => {
   return (
     <section className='w-full bg-inherit  z-10  snap-start ' id='projects'>
         <div className='relative mx-auto flex flex-col w-11/12 h-auto mb-12 max-w-maxContent gap-8  mt-10  text-white justify-center items-center'>
-         <m.div 
-         initial={{opacity:0}}
-         whileInView={{y:[-50,0], opacity:1}}
-         transition={{duration:1, ease: [0.45, 0, 0.55, 1]}} 
-         className='flex flex-col justify-center items-center gap-x-3 mt-14'>
-           <h3 className='subHeading text-4xl  text-center'>Projects</h3>
-           <div className='bg-gradient-to-r from-gray-900 via-gray-100 to-gray-900 w-[10rem] h-[1px] mt-3'></div>
-         </m.div>
+          <SectionName  name={"Projects"}/>
          {/*  filter projects when click */}
          <div className="flex justify-center space-x-4 mt-4 border-[1px] border-gray-900 py-2 px-4 rounded-full font-semibold ">
             <button
