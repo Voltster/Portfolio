@@ -12,7 +12,7 @@ const cardDetails = [
   {
     icon: code,
     heading: "Web Development",
-    description: "I specialize in building responsive and user-friendly websites using modern technologies like React, HTML5, CSS3, and more..",
+    description: "I specialize in building responsive and user-friendly websites using modern technologies like React, HTML5, CSS3, and more.",
   },
   {
     icon: penTool,
@@ -42,13 +42,13 @@ const Service = () => {
                   whileInView="whileInView"  
                   custom={i}
                   key={i} 
-                  className='flex flex-col gap-4 justify-start items-center sm:w-[80%]  lg:w-[25%] h-[100%]  px-6  container'>
-                    <div className="box px-3  relative w-[320px] h-[400px] flex justify-center items-center">
+                  className='flex flex-col gap-4 justify-start items-center sm:w-[80%]  lg:w-[25%] h-[100%] mx-2 container'>
+                    <div className="box px-2  relative w-[320px] h-[400px] flex justify-center items-center ">
                     <span></span>
-                    <div className="content">
-                    <img src={ele.icon} alt={ele.icon} className="w-[40%] mx-auto" />
-                    <h2 className='text-2xl font-medium'>{ele.heading}</h2>
-                    <p className='text-center paragraph'>{ele.description}</p>
+                    <div className="content w-full border-2 border-[#353535]">
+                    <img src={ele.icon} alt={ele.icon} className="w-[40%] mx-auto " />
+                    <h2 className='text-2xl font-semibold text-center my-2'>{ele.heading}</h2>
+                    <p className=' w-full paragraph '>{ele.description}</p>
                     </div>
                   </div>
                    

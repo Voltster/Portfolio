@@ -15,10 +15,6 @@ body::-webkit-scrollbar, html::-webkit-scrollbar{
   /* scroll-snap-type:y mandatory */
 }
 
-/* section::-webkit-scrollbar{
-  scroll-snap-align:start 
-} */
-
 @tailwind base;
 
 
@@ -56,44 +52,19 @@ body {
 }
 
 body{
-  background: linear-gradient(to right top, #031126c0, #004d7a86, #00879300, #00bf7300, #a6eb1219) , 
-  url('./assets//Bg/bg.jpg') ;
+  background: linear-gradient(to right top, #0d0d0d, #0d0d0d);
   background-size: cover;
-  
 }
 
-.grid-Bg{
-  background-image: linear-gradient(rgba(5, 5, 5, 0.4) 0.5px, transparent 0.5px), linear-gradient(to right, rgba(5, 5, 5, 0.4) 0.5px, transparent 0.5px);
-  background-size: 89px 89px;
-  overflow: auto;
-  z-index: 999;
-}
+
+
 
 @tailwind components;
 @tailwind utilities;
 
-/* Media query for larger screens */
-/* @media screen and (min-width: 1366px) {
-  html,
-  body {
-    font-size: 20px;
-    line-height: 1.5;
-  }
-}
-@media screen and (min-width: 1080px) {
-  html,
-  body {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-} */
-
 
 /* ---Text-style--- */
 @layer components {
-  .heading{
-    @apply text-4xl font-bold tracking-tight text-gray-300 sm:text-6xl
-    }
 	
   .subHeading{
       @apply text-3xl font-bold tracking-tight text-gray-300
@@ -122,7 +93,6 @@ body{
   width: 100%;
   height: 1px;
   background: linear-gradient(90deg, #00000000 0%, #f4f4f4 50%, #00000000 100%);
-  
 }
 
 #underline:hover::after{
@@ -147,7 +117,5 @@ body{
 }
 
 .contact{
-  background: rgb(11,2,26);
-  background-position: top;
-background:radial-gradient(128.5% 107.13% at 50% 2.92%, transparent 37.41%,rgba(8, 106, 176, 0.298) 78.65%,#5b5b5b79 100%);
+  background:radial-gradient(128.5% 107.13% at 50% 2.92%, transparent 37.41%,#161616b7 78.65%,#161616 100%);
 }

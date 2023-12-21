@@ -24,8 +24,8 @@ const Navbar = () => {
     initial={{y:-25}}
     animate={{y:0}}
     transition={{duration:0.5}}
-    className='w-full px-6 z-50 fixed bg-inherit inset-x-0 top-0 flex justify-center items-center navbar'>
-        <div className='relative w-full md:w-[880px] p-4  rounded-md flex md:justify-around items-center '>
+    className='w-full md:w-11/12 md:mt-2 mx-auto px-6 z-50 fixed bg-inherit inset-x-0 top-0 flex justify-center items-center navbar'>
+        <div className='relative w-full  md:w-[880px] p-4  rounded-md flex md:justify-around items-center '>
             <div className='flex justify-center items-center gap-2'>
             <img src={rohit} alt="rohit" width={40} className='cursor-pointer' />
             <p className='text-lg text-gray-200 font-medium'>Rohit Kumar Mishra</p>
@@ -44,7 +44,7 @@ const Navbar = () => {
             {/* Ghost btn */}
             <Btn 
             outline={true} 
-            customClasses={"ml-10"} 
+            customClasses={"ml-10  text-sm"} 
             text={"Let Talk "}
             link={"#contact"}
             ><AiOutlineArrowRight/></Btn>

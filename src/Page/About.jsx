@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Btn from '../component/Btn';
-import about from "../assets/Image/about.jpg";
+import about from "../assets/Image/about1.jpg";
 import resumePdf from "../assets/Resume.pdf";
 import { motion as m } from "framer-motion";
 import SectionName from '../component/SectionName';
@@ -12,7 +12,7 @@ const About = () => {
   };
 
   return (
-    <section className='w-full bg-inherit z-0 snap-start' id='about'>
+    <section className='w-full bg-inherit z-0 snap-start mt-1' id='about'>
       <div className='relative mx-auto flex w-11/12 h-[100%] max-w-maxContent flex-col items-center justify-center gap-8 mt-10'>
         <SectionName name={"About"}/>
         <div className="flex w-full flex-col md:flex-row gap-x-20 gap-y-4 items-center justify-center">
@@ -21,8 +21,8 @@ const About = () => {
           whileInView={{x:[-250,0], opacity:1}}
           transition={{duration:1, ease: [0.45, 0, 0.55, 1]}}
           className="relative">
-            <img src={about} className='relative rounded-sm bg-indigo-900 p-[2px] z-10' width={325} alt='author pic' loading='lazy'/>
-            <div className='border-2 border-indigo-600 w-[100%] h-[97%] absolute top-[20px] left-[10px] z-0'></div>
+            <img src={about} className='relative rounded-md  p-[2px] z-10' width={325} alt='author pic' loading='lazy'/>
+            <div className='border-2 border-[#141414]  rounded-md w-[100%] h-[97.5%] absolute top-[20px] left-[10px] z-0'></div>
           </m.div>
           <m.div
           initial={{x:0,opacity:0}}
@@ -41,8 +41,11 @@ const About = () => {
             <div className='flex flex-row gap-4 mt-4'>
               <Btn text={"HIRE ME"}
                 link={`#contact`}
+                customClasses={"text-sm"}
               ></Btn>
-              <Btn outline={true} text={"DOWNLOAD RESUME"} onclick={downloadResume}></Btn>
+              <Btn outline={true} text={"See My RESUME"} onclick={downloadResume}  customClasses={"text-sm"}>
+             
+              </Btn>
             </div>
           </m.div>
         </div>

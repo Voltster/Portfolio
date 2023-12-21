@@ -97,9 +97,9 @@ const Skill = () => {
                 initial="initial" 
                 custom={index}
                 key={index}
-                className='text-gray-100 bg-[#020A0C] bg-opacity-30  backdrop-blur-lg shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] h-[100px] flex flex-col justify-center items-center rounded-md hover:text-gray-50 duration-200 group transition-transform  hover:scale-105 p-6 sm:p-2'
+                className='text-gray-100 shadow-[rgba(0,_0,_0,_0.24)_0px_2px_4px] flex flex-col justify-center items-center rounded-md hover:text-gray-50 duration-200 group transition-transform  hover:scale-105 p-6 sm:p-2'
                 >
-                 <Icon size={75} className="group-hover:text-gray-100]"/>
+                 <Icon size={65} className="group-hover:text-gray-100]"/>
                   <p className='paragraph'>{item.heading}</p>
                 </m.div>
               )

@@ -1,5 +1,5 @@
 import razorpay from "../assets/Projects/razorpay.jpg"
-import PORTFOLIO from "../assets/Projects/PORTFOLIO.jpg"
+import friendly from "../assets/Projects/friendly-parentig.png"
 import Crossverse from "../assets/Projects/Crossverse.jpg"
 import foodwebsite from "../assets/Projects/food-website.jpg"
 import KILLUA from "../assets/Projects/KILLUA.jpg"
@@ -7,14 +7,14 @@ import travel from "../assets/Projects/travel.jpg"
 
 const projectData = [
     {
-        heading:"Portfolio website",
-        description:'Welcome to the digital showcase of my creativity and skills, brought to life through the power of React and the elegance of Tailwind CSS.',
-        image: PORTFOLIO,
-        alt: "PORTFOLIO",
-        tools:["React", "Html", "Tailwind","Vite", "Css"],
-        about: '.' ,
+        heading:"Friendly Parenting",
+        description:"Transformed the website with a modern and visually appealing design, highlighting creativity and innovation",
+        image: friendly,
+        alt: "friendly",
+        tools:["Html5", "CSS3","Bootstrap", "Javascript"],
+        about: ['Acquired first freelance project through a teacher, showcasing determination and eagerness for growth. Created a visually stunning and user-friendly website.' ],
         category: "Design",
-        demoLink:"https://designer-manish.rohitmishra17.repl.co/",
+        demoLink:"https://voltster.github.io/Friendly-Parenting/",
         // githubLink:"https://onepiece.fandom.com/wiki/Roronoa_Zoro"
     },
     {

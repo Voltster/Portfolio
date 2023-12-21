@@ -11,24 +11,16 @@ import Cursor from "./component/Cursor";
 import { AnimatePresence,} from "framer-motion"
 
 
+
 function App() {
   return (<>
-    <div className=" relative font-roboto select-text flex w-screen h-screen min-h-screen flex-col grid-Bg cursor-auto">
+    <div className=" relative font-roboto select-text flex w-screen h-screen min-h-screen flex-col cursor-auto">
       <AnimatePresence mode='wait'>
       <Cursor/>
-      {/* Navigation Bar */}
-      
+
       <Navbar />
 
-      {/* Background Animation */}
-      <div className="relative h-[100vh] w-screen snap-center " id="home">
-        {/* Main Section */}
-
-        <Hero />
-
-      </div>
-
-      {/* About */}
+      <Hero />
 
       <About />
 

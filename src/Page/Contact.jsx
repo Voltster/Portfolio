@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+// /* eslint-disable react/no-unescaped-entities */
 
 import { useForm, ValidationError } from '@formspree/react';
 import { motion as m } from "framer-motion"
@@ -29,9 +30,9 @@ const Contact = () => {
                                 whileInView={{ x: [-250, 0], opacity: 1 }}
                                 transition={{ duration: 1, ease: [0.45, 0, 0.55, 1] }}
                                 className="p-6 mr-2 bg-inherit  sm:rounded-lg">
-                                <h1 className="text-4xl sm:text-5xl text-gray-100 font-extrabold tracking-tight">
+                                <h3 className="text-4xl sm:text-5xl text-gray-100 font-extrabold tracking-tight">
                                     Let's Collaborate
-                                </h1>
+                                </h3>
                                 <p className="text-normal text-lg sm:text-2xl font-medium text-gray-300  mt-2">
                                     Ready to start a creative conversation? Fill out the form, and let's begin shaping your design vision.
                                 </p>
@@ -70,7 +71,7 @@ const Contact = () => {
 
                                 initial={{ x: 0, opacity: 0 }}
                                 whileInView={{ x: [250, 0], opacity: 1 }}
-                                action="https://formsubmit.co/1d8905e81bfa65c8b5a8d927cd713355 "
+                                action="https://formsubmit.co/5d77c5b3240155ecdd11216c1592189a"
                                 method='POST'
                                 transition={{ duration: 1, ease: [0.45, 0, 0.55, 1] }}
                                 className="p-6 flex flex-col justify-center">
@@ -103,6 +104,8 @@ const Contact = () => {
                                         field="message"
                                         errors={state.errors}
                                     />
+                                     <input type="hidden" name="_template" value="table" />
+                                    <input type="hidden" name="_captcha" value="false" />
                                 </div>
 
                                 <button type="submit" disabled={state.submitting} className="md:w-32 bg-indigo-700 hover:bg-indigo-600 text-gray-100 font-bold py-3 px-6 rounded-lg mt-3  transition ease-in-out duration-300 shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)] ">
