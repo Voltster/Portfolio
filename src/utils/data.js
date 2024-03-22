@@ -4,8 +4,24 @@ import Crossverse from "../assets/Projects/Crossverse.jpg"
 import foodwebsite from "../assets/Projects/food-website.jpg"
 import KILLUA from "../assets/Projects/KILLUA.jpg"
 import travel from "../assets/Projects/travel.jpg"
+import sunfoundation from "../assets/Projects/sunfoundation.png"
+import carrot from "../assets/Projects/24carrot.png" 
+import sundown from "../assets/Projects/sundown.png" 
+import weather from "../assets/Projects/weatherapp.png" 
+
 
 const projectData = [
+      {
+        heading:"24carrot",
+        description:"Transformed the website with a modern and visually appealing design, highlighting creativity and innovation",
+        image: carrot,
+        alt: "friendly",
+        tools:["Html5", "CSS3","Bootstrap", "Javascript"],
+        about: ['Acquired first freelance project through a teacher, showcasing determination and eagerness for growth. Created a visually stunning and user-friendly website.' ],
+        category: "Design",
+        demoLink:"https://voltster.github.io/24carrots-clone/",
+        // githubLink:"https://onepiece.fandom.com/wiki/Roronoa_Zoro"
+    },
     {
         heading:"Friendly Parenting",
         description:"Transformed the website with a modern and visually appealing design, highlighting creativity and innovation",
