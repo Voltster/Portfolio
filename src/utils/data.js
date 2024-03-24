@@ -23,7 +23,7 @@ const projectData = [
         // githubLink:"https://onepiece.fandom.com/wiki/Roronoa_Zoro"
     },
        {
-        heading:"sunfoundation Newsletter",
+        heading:"Sunfoundation Newsletter",
         description:"This is the newsletter of Sunfoundation. I created this site with the assistance of my teacher.",
         image: sunfoundation,
         alt: "sunfoundation",
