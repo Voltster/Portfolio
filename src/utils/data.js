@@ -13,10 +13,10 @@ import weather from "../assets/Projects/weatherapp.png"
 const projectData = [
       {
         heading:"24carrot",
-        description:"Transformed the website with a modern and visually appealing design, highlighting creativity and innovation",
+        description:"This website is a clone created to showcase my skills during an interview.",
         image: carrot,
         alt: "carrot",
-        tools:["Html5", "CSS3","Bootstrap", "Javascript"],
+        tools:["Html5", "CSS3","Bootstrap", "Javascript","GSAP"],
         about: ['Acquired first freelance project through a teacher, showcasing determination and eagerness for growth. Created a visually stunning and user-friendly website.' ],
         category: "Design",
         demoLink:"https://voltster.github.io/24carrots-clone/",
@@ -24,18 +24,18 @@ const projectData = [
     },
        {
         heading:"sunfoundation Newsletter",
-        description:"Transformed the website with a modern and visually appealing design, highlighting creativity and innovation",
+        description:"This is the newsletter of Sunfoundation. I created this site with the assistance of my teacher.",
         image: sunfoundation,
         alt: "sunfoundation",
-        tools:["Html5", "CSS3","Bootstrap", "Javascript"],
+        tools:["Html5", "CSS3", "Javascript","PHP"],
         about: ['Acquired first freelance project through a teacher, showcasing determination and eagerness for growth. Created a visually stunning and user-friendly website.' ],
         category: "Design",
         demoLink:"https://sunfoundation.vercel.app/mobile/index.html",
         // githubLink:"https://onepiece.fandom.com/wiki/Roronoa_Zoro"
     },
          {
-        heading:"Sundown Studio",
-        description:"Transformed the website with a modern and visually appealing design, highlighting creativity and innovation",
+        heading:"Weather App",
+        description:"This weather app was created by me to showcase my skills during an interview.",
         image: weather,
         alt: "weather",
         tools:["Html5", "CSS3","Bootstrap", "Javascript"],
@@ -45,7 +45,7 @@ const projectData = [
         // githubLink:"https://onepiece.fandom.com/wiki/Roronoa_Zoro"
     },
     {
-        heading:"Weather App",
+        heading:"Friendly Parenting",
         description:"Transformed the website with a modern and visually appealing design, highlighting creativity and innovation",
         image: friendly,
         alt: "friendly",
