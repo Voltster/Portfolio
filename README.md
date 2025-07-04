@@ -64,6 +64,6 @@ npm run build
 
     📧 Email: voltster95@gmail.com
 
-    🌐 LinkedIn: [Visit My LinkedIn](https://www.linkedin.com/in/rohit-kumar-mishra-a49b68262/)
+    🌐 LinkedIn: https://www.linkedin.com/in/rohit-kumar-mishra-a49b68262/
 
-    🐙 GitHub:  [Visit My Github](https://github.com/Voltster)
+    🐙 GitHub: https://github.com/Voltster
